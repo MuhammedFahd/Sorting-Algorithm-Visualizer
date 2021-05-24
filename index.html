@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Sorting Algorithms Visualizer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  padding: 5px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+    
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="BubbleSort.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Bubble Sort</a>
+    <a href="SelectionSort.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Selection Sort</a>
+    <a href="InsertionSort.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Insertion Sort</a>
+    <a href="QuickSort.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Quick Sort</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="BubbleSort.html" class="w3-bar-item w3-button w3-padding-large">Bubble Sort</a>
+    <a href="SelectionSort.html" class="w3-bar-item w3-button w3-padding-large">Selection Sort</a>
+    <a href="InsertionSort.html" class="w3-bar-item w3-button w3-padding-large">Insertion Sort</a>
+    <a href="QuickSort.html" class="w3-bar-item w3-button w3-padding-large">Quick Sort</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">SORTING ALGORITHMS VISUALIZER</h1>
+  <p class="w3-xlarge" style="color: black;">Learn about sorting algorithms through visualization</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Bubble Sort</h1></br>
+      
+
+      <p class="w3-text-grey">Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list.</p>
+
+      </br> <a href="BubbleSort.html" class="button" style="vertical-align:middle"><span>Visualize</span></a>
+    </div>
+    <div class="w3-third w3-center">
+        <i class="fa fa-sort-amount-desc fa-5x w3-padding-64 w3-text-red"></i>
+      </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-twothird">
+      <h1>Selection Sort</h1></br>
+      
+
+      <p class="w3-text-grey">Selection sort is an in-place comparison sorting algorithm. It generally performs worse than the similar insertion sort. Selection sort is noted for its simplicity and has performance advantages over more complicated algorithms in certain situations, particularly where auxiliary memory is limited.
+
+        The algorithm divides the input list into two parts: a sorted sublist of items which is built up from left to right at the front (left) of the list and a sublist of the remaining unsorted items that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element to the right.</p>
+
+      </br><a href="SelectionSort.html" class="button" style="vertical-align:middle"><span>Visualize</span></a>
+    </div>
+    <div class="w3-third w3-center">
+        <i class="fa fa-sort-amount-asc fa-5x w3-padding-64 w3-text-red"></i>
+      </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Insertion Sort</h1></br>
+        
+  
+        <p class="w3-text-grey">Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. Insertion sort iterates, consuming one input element each repetition, and grows a sorted output list. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.</p>
+  
+        </br> <a href="InsertionSort.html" class="button" style="vertical-align:middle"><span>Visualize</span></a>
+      </div>
+      <div class="w3-third w3-center">
+          <i class="fa fa-sort-amount-desc fa-5x w3-padding-64 w3-text-red"></i>
+        </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+  
+      <div class="w3-twothird">
+        <h1>Quick Sort</h1></br>
+        
+  
+        <p class="w3-text-grey">Quicksort is a divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. For this reason, it is sometimes called partition-exchange sort.[4] The sub-arrays are then sorted recursively. This can be done in-place, requiring small additional amounts of memory to perform the sorting.
+
+          Quicksort is a comparison sort, meaning that it can sort items of any type for which a "less-than" relation is defined. </p>
+  
+        </br><a href="QuickSort.html" class="button" style="vertical-align:middle"><span>Visualize</span></a>
+      </div>
+      <div class="w3-third w3-center">
+          <i class="fa fa-sort-amount-asc fa-5x w3-padding-64 w3-text-red"></i>
+        </div>
+    </div>
+  </div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ <p>Developed by Fahd Fazal. &copy; Copyright <strong>Fahd Fazal</strong></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
